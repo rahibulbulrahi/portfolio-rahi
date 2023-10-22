@@ -30,6 +30,7 @@
     scroll-behavior: smooth;
     color: black;
     font-family: var(--Montserrat-font-family);
+
 }
 
 /* Main Section */
@@ -41,8 +42,9 @@ header {
     justify-content: space-between;
     align-items: center;
     top: 0;
+    left: 0;
     padding: 50px 150px;
-    z-index: 100;
+    z-index: 99999;
     width: 100%;
     transition: 0.6s;
 }
@@ -169,4 +171,34 @@ section:nth-child(odd) {
     background: black;
     color: white;
     transition: 0.5s;
+}
+
+/* About Section */
+.about-content {
+    /* margin: 50px 50px 0px 50px; */
+    background-color: red;
+    padding: 100px 150px 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-content h1 {
+    font-size: 2rem;
+    font-family: var(--Lilita-font-family);
+    font-weight: 700;
+    color: #333;
+    padding: 20px 0px;
+}
+
+.about-middle-content {
+    display: flex;
+}
+
+.about-left, .about-right {
+    flex: 1;
+}
+
+.about-left {
+    background-color: #74767b;
 }
